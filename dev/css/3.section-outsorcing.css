@@ -1,0 +1,136 @@
+.outsorcing {
+
+}
+
+.outsorcing .block_main_title {
+	z-index: 2;
+	position: relative;
+}
+
+.outsorcing .bg_container {
+	position: relative;
+	z-index: 1;
+	margin-top: 20px;
+}
+
+.outsorcing .bg_image {
+	z-index: 0;
+	width: 100%;
+}
+
+.outsorcing .block {
+	width: 100%;
+	justify-content: flex-start;
+	text-align: left;
+	margin-bottom: 20px;
+	z-index: 1;
+}
+
+.outsorcing .block_content {
+	padding-left: 30px;
+	position: relative;
+}
+
+.outsorcing .block_content:before {
+	content: "";
+	position: absolute;
+	display: block;
+	width: 18px;
+	height: 18px;
+	box-shadow: 0px 20px 50px 0px rgba(0, 0, 0, 0.3);
+	background: linear-gradient( -134deg, rgb(28,174,235) 0%, rgb(57,199,240) 51%, rgb(86,224,245) 100%);
+	top: 6px;
+	left: 6px;
+	border-radius: 50%;
+	z-index: 1;
+}
+
+.outsorcing .block_content:after {
+	content: "";
+	position: absolute;
+	display: block;
+	top: 6px;
+	left: -35px;
+	width: 50px;
+	background: url(../img/bg_slice_8x8_2d.png);
+	height: 18px;
+}
+
+.outsorcing .title {
+	font-family: 'Roboto Condensed', sans-serif;
+	text-transform: uppercase;
+	font-weight: 700;
+	font-size: 24px;
+	margin-bottom: 15px;
+	text-shadow:
+			1px 1px 0px #fff,
+			-1px 1px 0px #fff,
+			1px -1px 0px #fff,
+			-1px -1px 0px #fff;
+}
+
+.outsorcing .description {
+	font-family: 'Roboto Condensed', sans-serif;
+	font-weight: 300;
+	font-size: 14px;
+	letter-spacing: 0.05em;
+	text-shadow:
+			1px 1px 0px #fff,
+			-1px 1px 0px #fff,
+			1px -1px 0px #fff,
+			-1px -1px 0px #fff;
+}
+
+@media screen and (min-width: 668px) {
+
+	.outsorcing .bg_container {
+		margin-top: 30px;
+	}
+
+	.outsorcing .bg_image {
+		width: 56.95067264573991%;
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+	}
+
+	.outsorcing .block {
+		width: 50%;
+		justify-content: flex-start;
+		text-align: left;
+		margin-bottom: 40px;
+		z-index: 1;
+	}
+	.outsorcing .block:nth-child(even) {
+		justify-content: flex-end;
+		text-align: right;
+	}
+
+	.outsorcing .block_content {
+		max-width: 280px;
+		padding-left: 0;
+	}
+
+	.outsorcing .block_content:before,
+	.outsorcing .block_content:after {
+		display: none;
+	}
+
+	.outsorcing .title {
+		margin-bottom: 25px;
+	}
+
+}
+
+@media screen and (min-width: 768px) {
+
+	.outsorcing .bg_container {
+		margin-top: 65px;
+	}
+
+	.outsorcing .bg_image {
+		width: auto;
+	}
+
+}

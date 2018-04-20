@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en" class="page-works">
+<head>
+	@@include('./include/head.html', { "gmap": false })
+	<title>Our Works</title>
+</head>
+<body>
+@@include('./include/header.html', { "active": "works" })
+<section class="our_works">
+	<div class="tabs_container">
+		<div class="tab_blocks">
+			<div class="tab_block active-tab-block fade" id="thumbnails_tab">
+				<div class="container">
+					<h3 class="block_main_title">Our Works</h3>
+					<div class="thumbnails_container flex flex-center-x flex-center-y" id="work_slider_controls">
+						<div class="thumbnail_block">
+							<img src="img/portfolio_tumb_1.jpg" data-tab-target="#slider_tab" data-slide-index="1" alt="" class="tab slider_controll responsive_img">
+						</div>
+						<div class="thumbnail_block">
+							<img src="img/portfolio_tumb_1.jpg" data-tab-target="#slider_tab" data-slide-index="2" alt="" class="tab slider_controll responsive_img">
+						</div>
+						<div class="thumbnail_block">
+							<img src="img/portfolio_tumb_1.jpg" data-tab-target="#slider_tab" data-slide-index="3" alt="" class="tab slider_controll responsive_img">
+						</div>
+						<div class="thumbnail_block">
+							<img src="img/portfolio_tumb_1.jpg" data-tab-target="#slider_tab" data-slide-index="4" alt="" class="tab slider_controll responsive_img">
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="tab_block" id="slider_tab">
+				<div class="info_block" id="info_block">
+					<span class="show"></span>
+					<div class="info_block_inner info_hidden">
+						<div class="top flex flex-center-y">
+							<div class="title">description</div>
+							<a class="site_link" href="#">browse site</a>
+							<span class="hide"></span>
+						</div>
+						<div class="bottom">
+							<div class="subtitle">Technologies used in the project:</div>
+							<div class="flex flex-center-y images info_tab" data-slide-index="1">
+								<img src="img/projects/technology_icon_1.png" alt="">
+							</div>
+							<div class="flex flex-center-y images info_tab" data-slide-index="2">
+								<img src="img/projects/technology_icon_1.png" alt="">
+								<img src="img/projects/technology_icon_1.png" alt="">
+							</div>
+							<div class="flex flex-center-y images info_tab" data-slide-index="3">
+								<img src="img/projects/technology_icon_1.png" alt="">
+								<img src="img/projects/technology_icon_1.png" alt="">
+								<img src="img/projects/technology_icon_1.png" alt="">
+							</div>
+							<div class="flex flex-center-y images info_tab" data-slide-index="4">
+								<img src="img/projects/technology_icon_1.png" alt="">
+								<img src="img/projects/technology_icon_1.png" alt="">
+								<img src="img/projects/technology_icon_1.png" alt="">
+								<img src="img/projects/technology_icon_1.png" alt="">
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="container">
+					<div class="slider" id="works_slider">
+						<button class="back_btn tab" data-tab-target="#thumbnails_tab">Back</button>
+						<div class="slider_controlls">
+							<a class="arrow right_arrow" data-component="slider_control" data-action="forward"></a>
+							<a class="arrow left_arrow" data-component="slider_control" data-action="back"></a>
+						</div>
+						<div class="overflow_hidden_container">
+							<div class="overflow_block clr flex flex-center-v">
+								<div class="slider_slide" data-component="slide">
+									<div class="block_main_title">Project 1</div>
+									<img src="img/projects/nike1.png" alt="" class="responsive_img">
+									<img src="img/projects/nike2.png" alt="" class="responsive_img">
+									<img src="img/projects/nike3.png" alt="" class="responsive_img">
+									<img src="img/projects/nike4.png" alt="" class="responsive_img">
+								</div>
+								<div class="slider_slide" data-component="slide">
+									<div class="block_main_title">Project 2</div>
+									<img src="img/projects/nike1.png" alt="" class="responsive_img">
+									<img src="img/projects/nike2.png" alt="" class="responsive_img">
+									<img src="img/projects/nike3.png" alt="" class="responsive_img">
+									<img src="img/projects/nike4.png" alt="" class="responsive_img">
+								</div>
+								<div class="slider_slide" data-component="slide">
+									<div class="block_main_title">Project 3</div>
+									<img src="img/projects/nike1.png" alt="" class="responsive_img">
+									<img src="img/projects/nike2.png" alt="" class="responsive_img">
+									<img src="img/projects/nike3.png" alt="" class="responsive_img">
+									<img src="img/projects/nike4.png" alt="" class="responsive_img">
+								</div>
+								<div class="slider_slide" data-component="slide">
+									<div class="block_main_title">Project 4</div>
+									<img src="img/projects/nike1.png" alt="" class="responsive_img">
+									<img src="img/projects/nike2.png" alt="" class="responsive_img">
+									<img src="img/projects/nike3.png" alt="" class="responsive_img">
+									<img src="img/projects/nike4.png" alt="" class="responsive_img">
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+@@include('./include/footer.html')
+</body>
+</html>

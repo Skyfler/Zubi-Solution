@@ -1,0 +1,39 @@
+.customselect {
+	display: inline-block;
+	position: relative;
+}
+
+.customselect .title {
+	border: 2px groove #000000;
+	box-sizing: border-box;
+	padding: 2px;
+	cursor: pointer;
+	text-align: left;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	display: block;
+	width: 100%;
+}
+
+.customselect .option_list {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	display: none;
+	position: absolute;
+	z-index: 1000;
+	background: white;
+	border-bottom: 1px solid #000;
+	border-left: 1px solid #000;
+	border-right: 1px solid #000;
+	box-sizing: border-box;
+	overflow-y: auto;
+}
+.customselect.open .option_list {
+	display: block;
+}
+
+.customselect .option_list .option {
+	cursor: pointer;
+}

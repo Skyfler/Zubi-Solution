@@ -1,0 +1,64 @@
+.hidden,
+.sm-visible,
+.md-visible,
+.lg-visible {
+	display: none!important;
+}
+
+.xs-visible {
+	display: block !important;
+}
+
+@media screen and (min-width: 768px) {
+
+	.xs-visible,
+	.md-visible,
+	.lg-visible {
+		display: none!important;
+	}
+
+	.sm-visible {
+		display: block !important;
+	}
+
+	.xs-max-visible {
+		display: none !important;
+	}
+
+}
+
+@media screen and (min-width: 992px) {
+
+	.xs-visible,
+	.sm-visible,
+	.lg-visible {
+		display: none!important;
+	}
+
+	.md-visible {
+		display: block !important;
+	}
+
+	.sm-max-visible {
+		display: none!important;
+	}
+
+}
+
+@media screen and (min-width: 1200px) {
+
+	.xs-visible,
+	.sm-visible,
+	.md-visible {
+		display: none!important;
+	}
+
+	.lg-visible {
+		display: block !important;
+	}
+
+	.md-max-visible {
+		display: none!important;
+	}
+
+}

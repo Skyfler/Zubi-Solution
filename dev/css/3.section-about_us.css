@@ -1,0 +1,26 @@
+.about_us {
+	padding: 45px 0 0;
+}
+
+.about_us .text_block {
+	font-size: 16px;
+	font-weight: 600;
+	color: #282828;
+	padding-top: 28px;
+}
+
+.about_us .text_block p + p {
+	margin-top: 25px;
+}
+
+@media screen and (min-width: 768px) {
+
+	.about_us {
+		padding: 90px 0 70px;
+	}
+
+	.about_us .text_block {
+		padding-top: 55px;
+	}
+
+}

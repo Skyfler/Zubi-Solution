@@ -1,0 +1,167 @@
+.outstuff {
+
+}
+
+.outstuff .block_main_title {
+	z-index: 2;
+	position: relative;
+}
+
+.outstuff .bg_container {
+	position: relative;
+	z-index: 1;
+	margin-top: 20px;
+}
+
+.outstuff .bg_image {
+	z-index: 0;
+	width: 100%;
+}
+
+.outstuff .bg_image_second {
+	width: 100%;
+}
+
+.outstuff .block {
+	width: 100%;
+	justify-content: flex-start;
+	text-align: left;
+	margin-bottom: 20px;
+	z-index: 1;
+}
+.outstuff .block + .block {
+	order: 1;
+}
+
+.outstuff .block_content {
+	padding-left: 30px;
+	position: relative;
+}
+
+.outstuff .block_content:before {
+	content: "";
+	position: absolute;
+	display: block;
+	width: 18px;
+	height: 18px;
+	box-shadow: 0px 20px 50px 0px rgba(0, 0, 0, 0.3);
+	background: #02b69c;
+	top: 6px;
+	left: 6px;
+	border-radius: 50%;
+	z-index: 1;
+}
+
+.outstuff .block_content:after {
+	content: "";
+	position: absolute;
+	display: block;
+	top: 6px;
+	left: -35px;
+	width: 50px;
+	background: url(../img/bg_slice_8x8_2d.png);
+	height: 18px;
+}
+
+.outstuff .title {
+	font-family: 'Roboto Condensed', sans-serif;
+	text-transform: uppercase;
+	font-weight: 700;
+	font-size: 24px;
+	margin-bottom: 15px;
+	text-shadow:
+			1px 1px 0px #fff,
+			-1px 1px 0px #fff,
+			1px -1px 0px #fff,
+			-1px -1px 0px #fff;
+}
+
+.outstuff .description {
+	font-family: 'Roboto Condensed', sans-serif;
+	font-weight: 300;
+	font-size: 14px;
+	letter-spacing: 0.05em;
+	text-shadow:
+			1px 1px 0px #fff,
+			-1px 1px 0px #fff,
+			1px -1px 0px #fff,
+			-1px -1px 0px #fff;
+}
+
+@media screen and (max-width: 667px) {
+
+	.outstuff .bg_image_second {
+		display: none;
+	}
+
+}
+
+@media screen and (min-width: 668px) {
+
+	.outstuff {
+		/*padding: 0 0 50px;*/
+	}
+
+	.outstuff .bg_container {
+		margin-top: 30px;
+	}
+
+	.outstuff .bg_image {
+		/*width: 56.95067264573991%;*/
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		display: none;
+	}
+
+	.outstuff .block {
+		width: 100%;
+	}
+
+	.outstuff .block_content {
+		padding-left: 0;
+	}
+
+	.outstuff .block_content:before,
+	.outstuff .block_content:after {
+		display: none;
+	}
+
+	.outstuff .title {
+		margin-bottom: 25px;
+	}
+
+}
+
+@media screen and (min-width: 768px) {
+
+	.outstuff {
+		padding: 50px 0 115px;
+	}
+
+	.outstuff .bg_container {
+		margin-top: 65px;
+	}
+
+	.outstuff .bg_image {
+		width: auto;
+		display: block;
+	}
+
+	.outstuff .block {
+		width: 50%;
+		justify-content: flex-start;
+		margin-bottom: 40px;
+		z-index: 1;
+	}
+	.outstuff .block:nth-child(even) {
+		justify-content: flex-end;
+		text-align: right;
+	}
+
+	.outstuff .block_content {
+		max-width: 280px;
+	}
+
+}

@@ -1,0 +1,41 @@
+*,
+*:before,
+*:after {
+	box-sizing: border-box;
+}
+
+*:focus {
+	outline: none;
+}
+
+a, button {
+	text-decoration: none;
+	cursor: pointer;
+}
+
+html, body {
+	font-family: 'Raleway', sans-serif;
+	font-size: 10px;
+	height: 100%;
+	background: #fff;
+	position: relative;
+	overflow-x: hidden;
+}
+
+ul {
+	padding: 0;
+	margin: 0;
+	list-style: none;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+	margin: 0;
+}
+
+*::-webkit-scrollbar              { /* 1 */ }
+*::-webkit-scrollbar-button       { /* 2 */ }
+*::-webkit-scrollbar-track        { /* 3 */ }
+*::-webkit-scrollbar-track-piece  { /* 4 */ }
+*::-webkit-scrollbar-thumb        { /* 5 */ }
+*::-webkit-scrollbar-corner       { /* 6 */ }
+*::-webkit-resizer                { /* 7 */ }

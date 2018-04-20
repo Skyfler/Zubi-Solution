@@ -1,0 +1,30 @@
+<header id="header">
+	<div class="container flex flex-nowrap flex-center-y">
+		<div class="brand">
+			<h1 class="logo_container">
+				<a href="/" class="navbar_brand">
+					<img src="img/logo.png" alt="Zubisolution" class="responsive_img">
+				</a>
+			</h1>
+		</div>
+		<button class="menu_open_btn" id="header_menu_open_btn"></button>
+		<nav class="main_nav" id="header_menu">
+			<div class="nav_inner">
+				<button class="menu_close_btn" id="header_menu_close_btn"></button>
+				<ul class="main_menu flex flex-inline flex-center-y">
+					<li><a href="/" @@if (active === 'index') {class="active"}>Главная</a></li>
+					<li><a href="about_us" @@if (active === 'about_us') {class="active"}>О нас</a></li>
+					<li><a href="works" @@if (active === 'works') {class="active"}>Портфолио</a></li>
+					<li><a href="contacts" @@if (active === 'contacts') {class="active"}>Контакты</a></li>
+					<!--<li id="lang_switch_header" class="customselect">-->
+						<!--<button class="title"></button>-->
+						<!--<ul class="option_list">-->
+							<!--<li class="option" data-value="de" <?= $translator->lang === 'de' ? 'data-selected' : ''; ?>>DE</li>-->
+							<!--<li class="option" data-value="ru" <?= $translator->lang === 'ru' ? 'data-selected' : ''; ?>>RU</li>-->
+						<!--</ul>-->
+					<!--</li>-->
+				</ul>
+			</div>
+		</nav>
+	</div>
+</header>

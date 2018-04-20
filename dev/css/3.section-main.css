@@ -1,0 +1,111 @@
+.main {
+	padding: 25px 0 0;
+}
+
+.main .main_block_container {
+	margin: 0 -15px;
+}
+
+.main .main_block {
+	width: 100%;
+	padding: 10px 15px;
+}
+
+.main .block_content {
+	position: relative;
+}
+
+.main .animation_container {
+	width: 100%;
+	padding-top: 53.57142857142857%;
+	/*outline: 1px solid red;*/
+	position: relative;
+	border-radius: 5.357142857142857%/10%;
+	overflow: hidden;
+	z-index: 1;
+	box-shadow: 0 20px 50px 0 rgba(0, 0, 0, 0.3)
+}
+
+.main video {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: auto;
+}
+
+.main .block_content:before {
+	content: "";
+	position: absolute;
+	background-size: 100% 100%;
+}
+.main .main_block.outsorcing_block .block_content:before {
+	right: -2.177068214804064%;
+	top: -4.065040650406504%;
+	width: 98.54862119013062%;
+	height: 93.49593495934959%;
+	background-image: url(../img/index_outsorcing_bg_sm.png);
+}
+.main .main_block.outstuff_block .block_content:before {
+	left: -2.177068214804064%;
+	top: 4.065040650406504%;
+	width: 94.33962264150943%;
+	height: 99.1869918699187%;
+	background-image: url(../img/index_outstaff_bg_sm.png);
+}
+.main .main_block.design_block .block_content:before {
+	right: -2.177068214804064%;
+	top: 4.065040650406504%;
+	width: 96.80696661828737%;
+	height: 98.9159891598916%;
+	background-image: url(../img/index_design_bg_sm.png);
+}
+.main .main_block.content_block .block_content:before {
+	left: -2.177068214804064%;
+	top: 4.065040650406504%;
+	width: 96.80696661828737%;
+	height: 100.2710027100271%;
+	background-image: url(../img/index_content_bg_sm.png);
+}
+
+@media screen and (min-width: 768px) {
+
+	.main {
+		padding: 0;
+	}
+
+	.main .main_block {
+		width: 50%;
+		margin-bottom: 70px;
+	}
+
+	.main .main_block.outsorcing_block .block_content:before {
+		top: 1.666666666666667%;
+		right: -6.428571428571429%;
+		width: 134.2857142857143%;
+		height: 111.3333333333333%;
+		background-image: url(../img/index_outsorcing_bg.png);
+	}
+	.main .main_block.outstuff_block .block_content:before {
+		top: 0;
+		left: 5.535714285714286%;
+		width: 120.1785714285714%;
+		height: 87.33333333333333%;
+		background-image: url(../img/index_outstaff_bg.png);
+	}
+	.main .main_block.design_block .block_content:before {
+		top: 12.33333333333333%;
+		right: -2.142857142857143%;
+		width: 123.5714285714286%;
+		height: 128%;
+		background-image: url(../img/index_design_bg.png);
+	}
+	.main .main_block.content_block .block_content:before {
+		top: -3%;
+		left: -1.071428571428571%;
+		width: 117.5%;
+		height: 152.3333333333333%;
+		background-image: url(../img/index_content_bg.png);
+	}
+
+}

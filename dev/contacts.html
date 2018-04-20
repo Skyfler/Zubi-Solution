@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en" class="page-contacts">
+<head>
+	@@include('./include/head.html', { "gmap": true })
+	<title>Contacts</title>
+</head>
+<body>
+@@include('./include/header.html', { "active": "contacts" })
+<section class="contacts">
+	<div class="container">
+		<h3 class="block_main_title">Contacts</h3>
+	</div>
+	<div class="block_container flex flex-align-stretch">
+		<div class="left_col">
+			<div class="container">
+				<div class="title">adds</div>
+				<div class="text_block">
+					<address>Zubi-Solutions - Oberer Kohlenweg 8 - 59425 Unna</address>
+					<p><span class="small_title">Phone:</span> 0171 288 96 80</p>
+					<p><span class="small_title">Email:</span> Service@zubi-solutions.de</p>
+				</div>
+				<div class="title">payment details</div>
+				<div class="text_block">
+					<p><span class="small_title">Kontonummer:</span> 1554351</p>
+					<p><span class="small_title">IBAN:</span> DE49 3907 0024 0155 4351 00</p>
+					<p><span class="small_title">BLZ:</span> 39070024</p>
+					<p><span class="small_title">BIC:</span> DEUTDEDB390 Deutsche Bank</p>
+				</div>
+			</div>
+		</div>
+		<div class="right_col">
+			<div id="map" class="map"></div>
+		</div>
+	</div>
+	<div class="container">
+		<form action="php_scripts/send.php" class="contact_form clr content_inner flex" method="post" id="contact_form">
+			<input type="hidden" value="skyflerr@gmail.com" name="admin-email" data-component="form-input">
+			<input type="hidden" value="ZubiSolution" name="admin-name" data-component="form-input">
+			<div class="waiting_block"></div>
+			<div class="block_main_title">Instantly reach us filling form below</div>
+			<div class="input_group text_group lg_width">Hi there, my name is</div>
+			<div class="input_group input_name">
+				<input type="text" placeholder="how people call you" class="required" name="Name" data-component="form-input">
+				<div class="border"></div>
+			</div>
+			<div class="input_group text_group">I want to speak about</div>
+			<div class="input_group input_problem">
+				<input type="text" placeholder="what’s the problem" class="required" name="Problem" data-component="form-input">
+				<div class="border"></div>
+			</div>
+			<div class="input_group text_group lg_width">You can reach me via email at</div>
+			<div class="input_group input_mail">
+				<input type="email" placeholder="the real one please" class="required" name="Email" data-component="form-input">
+				<div class="border"></div>
+			</div>
+			<div class="input_group text_group">or</div>
+			<div class="input_group input_tel">
+				<input type="text" placeholder="skype, phone, codename" class="required" name="Tel" data-component="form-input">
+				<div class="border"></div>
+			</div>
+			<div class="input_group text_group lg_width">My ballpark for this project is</div>
+			<div class="input_group input_tel">
+				<input type="text" placeholder="$$$$$" class="required" name="Budget" data-component="form-input">
+				<div class="border"></div>
+			</div>
+			<div class="input_group text_group">US dollars.</div>
+			<div class="input_group input_submit">
+				<button type="submit" class="submit">Submit</button>
+			</div>
+		</form>
+	</div>
+</section>
+@@include('./include/footer.html')
+</body>
+</html>

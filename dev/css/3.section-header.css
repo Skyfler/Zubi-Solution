@@ -1,0 +1,239 @@
+header {
+	padding: 25px 0;
+	position: relative;
+	top: 0;
+	left: 0;
+	width: 100%;
+	z-index: 10;
+	transition: all .25s ease-in-out;
+}
+header.page_scrolled_down {
+	/*background-color: #3A3E3E;*/
+}
+
+header .brand {
+	width: 100%;
+}
+
+header .logo_container {
+	max-width: 127px;
+}
+
+header .navbar_brand {
+	display: block;
+}
+
+header .menu_open_btn {
+	width: 30px;
+	height: 22px;
+	background-image: url(../img/menu_open.png);
+	background-color: transparent;
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: 100% 100%;
+	border: none;
+	padding: 0;
+}
+
+header .nav_inner {
+	position: fixed;
+	top: 0;
+	right: 0;
+	/*bottom: 0;*/
+	background: #fff;
+	padding: 95px 20px 110px;
+	/*height: 100%;*/
+	text-align: left;
+	transform: translateX(100%);
+	transition: transform .25s ease-in-out;
+	box-shadow: 20px 0 50px 0 rgba(0, 0, 0, 0.3);
+	max-width: 220px;
+	width: 50%;
+}
+header.menu_open .main_nav .nav_inner {
+	transform: translateX(0);
+}
+
+header .menu_close_btn {
+	border: none;
+	padding: 0;
+	position: absolute;
+	top: 32px;
+	right: 15px;
+	color: #fff;
+	font-size: 32px;
+	width: 30px;
+	height: 22px;
+	background: url(../img/menu_close.png);
+}
+
+header .main_menu {
+	text-align: right;
+	text-transform: uppercase;
+	font-size: 14px;
+	color: #282828;
+	font-style: normal;
+	font-weight: 700;
+	/*display: inline-block;*/
+	font-family: 'Roboto Condensed', sans-serif;
+	justify-content: flex-end;
+}
+
+header .main_menu > li {
+	position: relative;
+	width: 100%;
+}
+header .main_menu > li + li {
+	margin-top: 35px;
+}
+header .main_menu li.customselect {
+	/*display: none;*/
+	width: auto;
+}
+
+header .main_menu > li a {
+	color: inherit;
+	display: block;
+	transition: opacity .15s ease-in-out;
+}
+header .main_menu > li a:hover {
+	opacity: 0.6;
+}
+
+header .main_menu li.customselect {
+	text-align: center;
+}
+
+header .main_menu li.customselect .title {
+	background: none;
+	border: none;
+	border-radius: 50%;
+	position: relative;
+	font-family: 'Roboto Condensed', sans-serif;
+	font-weight: 700;
+	transition:
+		opacity .2s ease-in-out;
+	width: 30px;
+	height: 30px;
+	color: inherit;
+	text-align: center;
+}
+
+header .main_menu li.customselect .option_list {
+	padding: 7px 0 0;
+	width: 100%;
+	background: none;
+	transition: background .25s ease-in-out;
+	top: calc(100% - 2px);
+	border: none;
+}
+header.page_scrolled_down .main_menu li.customselect .option_list {
+	background: #3A3E3E;
+}
+
+header .main_menu li.customselect .option {
+	display: block;
+	transition: opacity .15s ease-in-out;
+}
+header .main_menu li.customselect .option + .option {
+	margin-top: 3px;
+}
+header .main_menu li.customselect .option:hover {
+	opacity: 0.6;
+}
+
+header .main_menu li.submenu_container > span {
+	cursor: pointer;
+	transition: opacity .15s ease-in-out;
+}
+header .main_menu li.submenu_container > span:hover {
+	opacity: 0.6;
+}
+
+@media screen and (min-width: 768px) {
+
+	header .menu_close_btn {
+		right: 29px;
+	}
+
+}
+
+@media screen and (min-width: 768px) {
+
+	header .brand {
+		width: auto;
+	}
+
+	header .nav_inner {
+		position: relative;
+		top: auto;
+		right: auto;
+		bottom: auto;
+		background: transparent;
+		padding: 0;
+		height: auto;
+		text-align: left;
+		transform: none;
+		transition: none;
+		box-shadow: none;
+		max-width: none;
+		width: auto;
+	}
+
+	header .menu_open_btn {
+		display: none;
+	}
+
+	header .menu_close_btn {
+		display: none;
+	}
+
+	header .main_menu {
+		text-align: right;
+	}
+
+	header .main_menu li.customselect {
+		display: inline-block;
+	}
+
+	header .main_menu li.customselect .title {
+		border: 1px solid #141414;
+	}
+
+	header .main_menu > li {
+		display: inline-block;
+		width: auto;
+	}
+	header .main_menu > li + li {
+		margin-top: 0;
+		margin-left: 40px;
+	}
+
+	header .main_menu > li a {
+		position: relative;
+		vertical-align: middle;
+		height: 50px;
+	}
+
+	header .main_menu > li a:before {
+		position: absolute;
+		width: 17px;
+		border-bottom: 10px solid #02b69c;
+		bottom: 0;
+		left: 0;
+		content: "";
+		display: block;
+		opacity: 0;
+	}
+	header .main_menu > li a.active:before {
+		opacity: 1;
+	}
+
+	header .main_menu > li a:after {
+		content: "";
+		display: inline-block;
+		vertical-align: middle;
+		height: 100%;
+	}
+
+}
